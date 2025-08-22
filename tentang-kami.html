@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Nama Perusahaan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 30px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 25px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #f1c40f;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1200x600') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        section {
+            padding: 50px 0;
+            background: white;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+            text-align: center;
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .values-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .value-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+            transition: transform 0.3s;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .value-card i {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        
+        .team-member {
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+        }
+        
+        .team-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            border: 5px solid #f0f0f0;
+        }
+        
+        .stats-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            text-align: center;
+        }
+        
+        .stat {
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .footer-bottom {
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .about-content, .values-container, .team-container, .stats-container, .footer-content {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="hero">
+        <div class="container">
+            <h1>Tentang Kami</h1>
+            <p>Mewujudkan visi melalui inovasi, dedikasi, dan komitmen terhadap keunggulan</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section id="about">
+            <h2>Siapa Kami</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Nama Perusahaan didirikan pada tahun 2010 dengan misi untuk memberikan solusi inovatif dalam industri teknologi. Sejak awal, kami telah berkomitmen untuk memberikan yang terbaik kepada klien kami dengan menggabungkan kreativitas, keahlian teknis, dan pemahaman mendalam tentang kebutuhan pasar.</p>
+                    <p>Dengan tim yang terdiri dari profesional berpengalaman, kami telah menyelesaikan lebih dari 500 proyek untuk klien dari berbagai sektor industri. Pendekatan kami yang berpusat pada klien dan fokus pada kualitas telah membuat kami dipercaya oleh perusahaan-perusahaan ternama.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://placehold.co/500x300" alt="Gambar Perusahaan">
+                </div>
+            </div>
+        </section>
+        
+        <section id="values">
+            <h2>Nilai-Nilai Kami</h2>
+            <div class="values-container">
+                <div class="value-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Inovasi</h3>
+                    <p>Kami selalu mencari cara baru dan lebih baik untuk menyelesaikan tantangan yang dihadapi klien kami.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Integritas</h3>
+                    <p>Kami menjunjung tinggi kejujuran, transparansi, dan etika dalam setiap aspek bisnis kami.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Kolaborasi</h3>
+                    <p>Kami percaya bahwa kerja tim dan kemitraan yang kuat adalah kunci kesuksesan.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="team">
+            <h2>Tim Kami</h2>
+            <div class="team-container">
+                </div>
+                <div class="team-member">
+                    <img src="img-tentang/djek.png" alt="Anggota Tim" class="team-img">
+                    <h3>Zaki</h3>
+                    <p>Sekretaris</p>
+                </div>
+                <div class="team-member">
+                    <img src="img-tentang/ayas.png" alt="Anggota Tim" class="team-img">
+                    <h3>Ayash</h3>
+                    <p>Ketua</p>
+                </div>
+                <div class="team-member">
+                    <img src="img-tentang/ryan.png" alt="Anggota Tim" class="team-img">
+                    <h3>Ryan</h3>
+                    <p>Penasihat</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="stats">
+            <h2>Pencapaian Kami</h2>
+            <div class="stats-container">
+                <div class="stat">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-desc">Proyek Diselesaikan</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-desc">Klien Bahagia</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-desc">Penghargaan</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-desc">Tahun Pengalaman</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    
+</body>
+</html>
